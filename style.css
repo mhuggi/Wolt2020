@@ -1,0 +1,89 @@
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 75px;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(101,101,255,1) 51%, rgba(0,212,255,1) 100%);
+    
+} 
+.imgId {
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    width: 500px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+ .picContain {
+      margin: 8px;
+      width : 500px;
+      border-radius: 10px;
+
+      max-width: 100%;
+    overflow: hidden;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;       
+  }
+
+  .picContain:hover {
+    transform: scale(0.98);
+    transition: transform .2;
+
+  }
+  .picContain:active {
+    transform: scale(0.95);
+    transition: transform .2;
+}
+#alphSort {
+    background-color: #FFF;
+    background-image: url("arrow.svg");
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    top: 5px;
+    left: 15px;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+  
+  .textHead {
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    left: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    transform: translate(-50%);
+  }
+  .descText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+    bottom: 8px;
+    left: 50%;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    transform: translate(-50%);
+
+  }
+  
+.arrow {
+    font-size: 35px;
+    color: #F00;
+    
+    
+}
